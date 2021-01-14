@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
@@ -41,3 +42,5 @@ Route::view('about', 'about');
 Route::get("user/{name}",[Users::class,'index']);
 Route::get("user/{name}",[Users::class,'index']);
 Route::get('persons',[UsersController::class,'loadView']);
+Route::post('human',[UserController::class, 'getData']);
+Route::view('login','human');
