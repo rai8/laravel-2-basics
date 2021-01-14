@@ -1,0 +1,1 @@
+<h1>Inner page block</h1>
