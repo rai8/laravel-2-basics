@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Users;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,9 @@ Route::get('/', function () {
     //echo $name;
 
     //passing the name as a parameter---- the 'name' is the key property
+
+    //redirect to about page
+    //return redirect("about");
     return view('welcome');
 });
 /* 
@@ -28,3 +32,5 @@ Route::get('/hello', function () {
 Route::view('hello', 'hello');
 Route::view('contact', 'contact');
 Route::view('about', 'about');
+//Route::get("users/",[Users::class,'index']);
+Route::get("users/{name}",[Users::class,'index']);

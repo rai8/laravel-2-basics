@@ -1,0 +1,5 @@
+controller- fetches data from the model and sends it to the view
+logics are found here, and all routes are directly linked by the conbtroller
+        php artisan server
+        php artisan make:controller Users
+    app/Http/Controllers --- file location
