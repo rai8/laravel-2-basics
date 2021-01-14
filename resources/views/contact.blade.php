@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<x-header />
     <h1>Contact page</h1>
 </body>
 </html>

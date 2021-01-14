@@ -6,6 +6,7 @@
     <title>Hello</title>
 </head>
 <body>
+<x-header />
     <h1>Hello WORLD Page || Hello</h1>
 </body>
 </html>

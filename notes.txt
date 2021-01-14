@@ -3,3 +3,10 @@ logics are found here, and all routes are directly linked by the conbtroller
         php artisan server
         php artisan make:controller Users
     app/Http/Controllers --- file location
+
+Route::view('hello', 'hello');- limitations to it is that you cannot pass a parameter to it
+
+Make component- reusable chunks of code that are redundant
+
+        php artisan make:component Header
+        use it on other pages= <x- header />
