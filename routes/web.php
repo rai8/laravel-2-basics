@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Users;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,10 @@ Route::get('/', function () {
     //return redirect("about");
     return view('welcome');
 });
+
+Route::get('/users/{name}', function($name){
+    return view('users', ['name'=>$name]);
+});
 /* 
 Route::get('/hello', function () {
     return view('hello');
@@ -33,4 +38,6 @@ Route::view('hello', 'hello');
 Route::view('contact', 'contact');
 Route::view('about', 'about');
 //Route::get("users/",[Users::class,'index']);
-Route::get("users/{name}",[Users::class,'index']);
+Route::get("user/{name}",[Users::class,'index']);
+Route::get("user/{name}",[Users::class,'index']);
+Route::get('persons',[UsersController::class,'loadView']);
