@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{name}', function ($name) {
+Route::get('/', function () {
     //echo $name;
 
     //passing the name as a parameter---- the 'name' is the key property
-    return view('welcome',['name'=>$name]);
+    return view('welcome');
 });
 /* 
 Route::get('/hello', function () {
@@ -26,3 +26,5 @@ Route::get('/hello', function () {
 
 //Route::view('/', 'welcome');
 Route::view('hello', 'hello');
+Route::view('contact', 'contact');
+Route::view('about', 'about');

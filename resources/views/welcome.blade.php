@@ -7,7 +7,11 @@
 </head>
 <body>
     <h1>Welcome Page || Welcome</h1>
+<ul>
 
-    <h1>{{$name}} </h1> 
+   <li> <a href="/about">About </a></li>
+   <li> <a href="/contact">Contact</a></li>
+   <li> <a href="/hello">Hello</a></li>
+</ul>
 </body>
 </html>
