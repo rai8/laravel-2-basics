@@ -10,3 +10,10 @@ Make component- reusable chunks of code that are redundant
 
         php artisan make:component Header
         use it on other pages= <x- header />
+
+
+     @if($user== "anil")
+    <h3>Hello {{$user}}</h3>
+    @else
+    <h3>Unknown user</h3>
+    @endif 

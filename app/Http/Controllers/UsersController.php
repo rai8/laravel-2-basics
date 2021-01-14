@@ -8,6 +8,7 @@ class UsersController extends Controller
 {
     //
     public function loadView(){
-        return view('users', ['users'=>['anil', 'sam','peter']]);
+        $data= ['anil','peter', 'krishna', 'locky', 'bruce'];
+        return view('users', ['users'=>$data]);
     }
 }
